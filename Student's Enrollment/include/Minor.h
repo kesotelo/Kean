@@ -10,7 +10,7 @@ class Minor
         Minor();
         virtual ~Minor();
 
-        int mi, fi , ti, s;
+        int mi, fi , ti;
         string orgz;
 
 

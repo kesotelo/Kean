@@ -13,11 +13,15 @@ class StudentEnrollmentSystem
 {
     public:
         StudentEnrollmentSystem();
-        virtual ~StudentEnrollmentSystem();
+        Core c;
+        GoodToHave gth;
+        Minor m;
 
+        virtual ~StudentEnrollmentSystem();
+        void showEnrolled(int ID);
         void addStudent();
         void addScholarship();
-        void SchoolName();
+        void joinOrganizations();
     protected:
 
     private:

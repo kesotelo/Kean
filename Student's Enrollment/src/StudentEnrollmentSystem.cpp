@@ -79,6 +79,8 @@ void StudentEnrollmentSystem::addStudent(){
    getline(cin, ga);
    cout << "Enter blood type: ";
    cin >> bt;
+   cout << ("Enter LRN: ");
+   cin >> lrn;
    cout << "Enter weight(in kg): ";
    cin >> weight;
    cout << "Enter height(in cm): ";
@@ -409,8 +411,40 @@ void StudentEnrollmentSystem::addStudent(){
 
    }
 
+   c.address = address;
+   c.age = age;
+   c.birthday = birthday;
+   c.birthplace = birthplace;
+   c.bt = bt;
+   c.cd = cd;
+   c.d = d;
+   c.dominant_hand = dominant_hand;
+   c.gender = gender;
+   c.grade = grade;
+   c.height = height;
+   c.lrn = lrn;
+   c.name = name;
+   c.pn = pn;
+   c.ps = ps;
+   c.religion = religion;
+   c.sa = sa;
+   c.section = section;
+   c.tn = tn;
+   c.weight = weight;
 
+   gth.fdc = fdc;
+   gth.fn = fn;
+   gth.fo = fo;
+   gth.ga = ga;
+   gth.gc = gc;
+   gth.gn = gn;
+   gth.gr = gr;
+   gth.mcd = mcd;
+   gth.mn = mn;
+   gth.mo;
 
+    cin.clear();
+    fflush(stdin);
 }
 
 void StudentEnrollmentSystem::addScholarship(){
@@ -427,8 +461,19 @@ void StudentEnrollmentSystem::addScholarship(){
    cout << "You're not qualified for the scholarship \n";
    }
 
-   cout << "REMINDER FOR THOSE YOU QUALIFIED. YOU MUST MAINTAIN AN 80+ AVERAGE.";
+   cout << "REMINDER FOR THOSE YOU QUALIFIED. YOU MUST MAINTAIN AN 80+ AVERAGE GRADE.";
 
+   m.fi = fi;
+   m.mi = mi;
+   m.ti;
+
+
+
+}
+
+void StudentEnrollmentSystem::showEnrolled(int ID){
+
+    cout << "Name: " << c.name << endl;
 
 
 }
