@@ -21,7 +21,6 @@ int main()
     cout <<"(2) Onsite Enrollment." << endl;
     cout <<"(3) Apply for scholarship" << endl;
     cout <<"(4) Join an organization" << endl;
-    cout <<"(5) Show list of enrolled students" << endl;
     cout <<"---------------------------------------------" << endl;
     cin >>c;
 
