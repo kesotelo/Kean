@@ -11,7 +11,7 @@ class Minor
         virtual ~Minor();
 
         int mi, fi , ti;
-        string orgz;
+        int orgz;
 
 
     protected:

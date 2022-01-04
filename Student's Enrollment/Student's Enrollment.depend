@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1639562190 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\main.cpp
+1641261568 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\main.cpp
 	<iostream>
 	<string>
 	"StudentEnrollmentSystem.h"
@@ -28,7 +28,7 @@
 1639556540 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\minor.cpp
 	"Minor.h"
 
-1639561607 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\minor.h
+1641268694 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\minor.h
 	<iostream>
 	<string>
 

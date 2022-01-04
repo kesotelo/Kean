@@ -471,9 +471,66 @@ void StudentEnrollmentSystem::addScholarship(){
 
 }
 
-void StudentEnrollmentSystem::showEnrolled(int ID){
+void StudentEnrollmentSystem::joinOrganizations(){
+    int orgz;
 
-    cout << "Name: " << c.name << endl;
+    cout << "===================================================\n";
+    cout << "=====Choose your preferred school organization=====\n";
+    cout << "===================================================\n";
+    cout << "1. Dance Troupe\n";
+    cout << "2. Glee Club\n";
+    cout << "3. Basketball Club\n";
+    cout << "4. Boy Scouts of the Philippines\n";
+    cout << "5. Girl Scouts of the Philippines\n";
+    cout << "Organization No. ";
+    cin >> orgz;
+
+    switch(orgz){
+    case 1:
+        cout << "+++++DANCE TROUPE EVENTS+++++\n";
+        cout << "-Practice\n";
+        cout << "-Outside School Competitions\n";
+        cout << "-Intermission number to numerous events\n";
+        cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S DANCE TROUPE\n";
+        break;
+    case 2:
+        cout << "+++++GLEE CLUB EVENTS+++++\n";
+        cout << "-Practice\n";
+        cout << "-School Competition\n";
+        cout << "-Intermission number to numerous events\n";
+        cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S GLEE CLUB\n";
+        break;
+    case 3:
+        cout << "+++++BASKETBALL CLUB EVENTS+++++\n";
+        cout << "-Practice\n";
+        cout << "-Intramurals\n";
+        cout << "-Outside School Competitions\n";
+        cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S BASKETBALL CLUB\n";
+        break;
+    case 4:
+        cout << "+++++BOY SCOUTS OF THE PHILIPPINES EVENTS+++++\n";
+        cout << "-Disaster Drills Assistance\n";
+        cout << "-Jamboree\n";
+        cout << "-Overnight Campings\n";
+        cout << "-Color Bearers in important events\n";
+        cout << "-Law and Order in school events\n";
+        cout << "YOU ARE NOW A MEMBER OF THE BOY SCOUTS OF THE PHILIPPINES\n";
+        break;
+    case 5:
+        cout << "+++++GIRL SCOUTS OF THE PHILIPPINES EVENTS+++++\n";
+        cout << "-Disaster Drills Assistance\n";
+        cout << "-Overnight Campings\n";
+        cout << "-Volunteering to social works\n";
+        cout << "-Law and Order in school events\n";
+        cout << "YOU ARE NOW A MEMBER OF THE GIRL SCOUTS OF THE PHILIPPINES\n";
+        break;
 
 
+
+
+
+
+
+    }
+    m.orgz;
 }

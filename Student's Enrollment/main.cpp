@@ -38,8 +38,15 @@ int main()
         break;
         cin.clear();
         fflush(stdin);
+
     case 3:
         ses.addScholarship();
+        cin.clear();
+        fflush(stdin);
+        break;
+
+    case 4:
+        ses.joinOrganizations();
         cin.clear();
         fflush(stdin);
         break;
