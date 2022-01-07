@@ -13,12 +13,13 @@ class StudentEnrollmentSystem
 {
     public:
         StudentEnrollmentSystem();
+        static const int numberOfStudents = 5000;
         Core c;
         GoodToHave gth;
         Minor m;
 
         virtual ~StudentEnrollmentSystem();
-        void showEnrolled(int ID);
+        void showEnrolled();
         void addStudent();
         void addScholarship();
         void joinOrganizations();

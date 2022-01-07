@@ -11,7 +11,9 @@ class Minor
         virtual ~Minor();
 
         int mi, fi , ti;
+        bool scholarship;
         int orgz;
+        string ch;
 
 
     protected:

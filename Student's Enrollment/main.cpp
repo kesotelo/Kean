@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
+#include<conio.h>
 
 #include "StudentEnrollmentSystem.h"
 using namespace std;
+
+
+
 
 int main()
 {
@@ -21,8 +25,10 @@ int main()
     cout <<"(2) Onsite Enrollment." << endl;
     cout <<"(3) Apply for scholarship" << endl;
     cout <<"(4) Join an organization" << endl;
+    cout <<"(5) Show Info" << endl;
     cout <<"---------------------------------------------" << endl;
     cin >>c;
+    system("cls");
 
 
 
@@ -47,6 +53,11 @@ int main()
 
     case 4:
         ses.joinOrganizations();
+        cin.clear();
+        fflush(stdin);
+        break;
+    case 5:
+        ses.showEnrolled();
         cin.clear();
         fflush(stdin);
         break;

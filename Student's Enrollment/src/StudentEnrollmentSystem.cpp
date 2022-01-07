@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+
 #include "Core.h"
 #include "GoodToHave.h"
 #include "Minor.h"
@@ -23,18 +24,32 @@ void StudentEnrollmentSystem::addStudent(){
     string name, birthday, gender, address, section, birthplace, civil_status, dominant_hand, religion, cd, tn, bt, d, ps;
     float height, weight;
     int grade, age, pn, lrn;
+    string tempo;
 
-    string sa = "(Di pa rin alam kung saan)";
-    string sn = "(Pag-uusapan pa)";
+
+
+
+
+
+
+
+
+    string sa = "235 Salcedo Street, Legaspi Village, Makati City";
+    string sn = "Philippine Prefecture Elementary (PPE)";
 
     string  mn, mcd , fn , mo , fo, fdc;
     string gn, gr, gc, ga;
 
-    cout << "Welcome to online enrollment of " << sn << endl;
-    cout << "REMINDER: PLEASE CAPITALIZED ALL FIRST LETTER WHEN FILLING UP. \n";
-    cout << "If transferee please state your previous school, if not put (Just put not).\n";
 
-   getline(cin, ps);
+    cout << "Welcome to online enrollment of " << sn << endl;
+    cout << "Located at " << sa << endl;
+    cout << "REMINDER: PLEASE CAPITALIZED ALL FIRST LETTER WHEN FILLING UP. \n";
+    getline(cin, tempo);
+
+
+
+
+
    cout << "Enter your name: ";
    getline(cin, name);
    cout << "Enter address: ";
@@ -102,6 +117,11 @@ void StudentEnrollmentSystem::addStudent(){
 
 
 
+
+
+
+
+
    cout << "Hello!! " << name << "," " Enter your grade level: ";
    cin >> grade;
 
@@ -109,6 +129,8 @@ void StudentEnrollmentSystem::addStudent(){
    cout << "Please wait your schedule is being processed \n"  << "............ \n" << "............ \n" << "............ \n" << "............ \n";
    cout << "Your schedule is down below. \n";
    cout << " " << endl;
+
+
 
 
 
@@ -411,6 +433,8 @@ void StudentEnrollmentSystem::addStudent(){
 
    }
 
+
+
    c.address = address;
    c.age = age;
    c.birthday = birthday;
@@ -432,6 +456,7 @@ void StudentEnrollmentSystem::addStudent(){
    c.tn = tn;
    c.weight = weight;
 
+
    gth.fdc = fdc;
    gth.fn = fn;
    gth.fo = fo;
@@ -443,47 +468,123 @@ void StudentEnrollmentSystem::addStudent(){
    gth.mn = mn;
    gth.mo;
 
+
     cin.clear();
     fflush(stdin);
 }
 
 void StudentEnrollmentSystem::addScholarship(){
     int mi, fi , ti;
-
-   cout << "Enter mother's income: ";
-   cin >> mi;
-   cout << "Enter father's income: ";
-   cin >> fi;
-   ti = mi + fi;
-   if(ti <= 30000){
-    cout << "You are qualified for the scholarship \n";
-   }else {
-   cout << "You're not qualified for the scholarship \n";
-   }
-
-   cout << "REMINDER FOR THOSE YOU QUALIFIED. YOU MUST MAINTAIN AN 80+ AVERAGE GRADE.";
-
-   m.fi = fi;
-   m.mi = mi;
-   m.ti;
+    bool scholarship;
 
 
+        cout << "Name(if blank you need to enroll first): " << c.name << endl;
+        cout << "Enter mother's monthly income: ";
+        cin >> mi;
+        cout << "Enter father's monthly income: ";
+        cin >> fi;
+        ti = mi + fi;
+        scholarship = mi + fi;
+        if(ti <= 30000){
+        cout << "You are qualified for the scholarship \n";
+        }else {
+        cout << "You're not qualified for the scholarship \n";
+        }
+        if(scholarship > 30000){
+            scholarship = false;
+        }
+        else if(scholarship < 30000){
+            scholarship = true;
+        }
 
-}
+        cout << "REMINDER FOR THOSE YOU QUALIFIED. YOU MUST MAINTAIN AN 80+ AVERAGE GRADE.";
+
+        m.fi = fi;
+        m.mi = mi;
+        m.ti = ti;
+        m.scholarship = scholarship;
+    }
+
+
+
+
+
+
 
 void StudentEnrollmentSystem::joinOrganizations(){
     int orgz;
+    string ch;
+
+    cout << "Hi, Name: " << c.name << endl;
 
     cout << "===================================================\n";
     cout << "=====Choose your preferred school organization=====\n";
     cout << "===================================================\n";
     cout << "1. Dance Troupe\n";
+    cout << "-Practice\n";
+    cout << "-Outside School Competitions\n";
+    cout << "-Intermission number to numerous events\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
     cout << "2. Glee Club\n";
+    cout << "-Practice\n";
+    cout << "-School Competition\n";
+    cout << "-Intermission number to numerous events\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
     cout << "3. Basketball Club\n";
+    cout << "-Practice\n";
+    cout << "-Intramurals\n";
+    cout << "-Outside School Competitions\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
     cout << "4. Boy Scouts of the Philippines\n";
+    cout << "-Disaster Drills Assistance\n";
+    cout << "-Jamboree\n";
+    cout << "-Overnight Campings\n";
+    cout << "-Color Bearers in important events\n";
+    cout << "-Law and Order in school events\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
     cout << "5. Girl Scouts of the Philippines\n";
+    cout << "-Disaster Drills Assistance\n";
+    cout << "-Overnight Campings\n";
+    cout << "-Volunteering to social works\n";
+    cout << "-Law and Order in school events\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
     cout << "Organization No. ";
     cin >> orgz;
+
+
+
+
+
 
     switch(orgz){
     case 1:
@@ -492,6 +593,15 @@ void StudentEnrollmentSystem::joinOrganizations(){
         cout << "-Outside School Competitions\n";
         cout << "-Intermission number to numerous events\n";
         cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S DANCE TROUPE\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        ch = "Dance Troupe.";
+
+        cin.clear();
+        fflush(stdin);
         break;
     case 2:
         cout << "+++++GLEE CLUB EVENTS+++++\n";
@@ -499,13 +609,33 @@ void StudentEnrollmentSystem::joinOrganizations(){
         cout << "-School Competition\n";
         cout << "-Intermission number to numerous events\n";
         cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S GLEE CLUB\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        ch = "Glee Club.";
+
+
+        cin.clear();
+        fflush(stdin);
         break;
     case 3:
         cout << "+++++BASKETBALL CLUB EVENTS+++++\n";
         cout << "-Practice\n";
         cout << "-Intramurals\n";
         cout << "-Outside School Competitions\n";
-        cout << "YOU ARE NOW A MEMBER OF THE SCHOOL'S BASKETBALL CLUB\n";
+        cout << "NOTE: THERE WILL BE A TRY OUT @ THE GYM ON JULY 25 AT 8AM\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        ch = "Basketball Club.";
+
+
+        cin.clear();
+        fflush(stdin);
         break;
     case 4:
         cout << "+++++BOY SCOUTS OF THE PHILIPPINES EVENTS+++++\n";
@@ -515,6 +645,17 @@ void StudentEnrollmentSystem::joinOrganizations(){
         cout << "-Color Bearers in important events\n";
         cout << "-Law and Order in school events\n";
         cout << "YOU ARE NOW A MEMBER OF THE BOY SCOUTS OF THE PHILIPPINES\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        ch = "Boy Scouts Of The Philippines.";
+
+
+        cin.clear();
+        fflush(stdin);
+
         break;
     case 5:
         cout << "+++++GIRL SCOUTS OF THE PHILIPPINES EVENTS+++++\n";
@@ -523,6 +664,17 @@ void StudentEnrollmentSystem::joinOrganizations(){
         cout << "-Volunteering to social works\n";
         cout << "-Law and Order in school events\n";
         cout << "YOU ARE NOW A MEMBER OF THE GIRL SCOUTS OF THE PHILIPPINES\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << " " << endl;
+        ch = "Girl Scouts Of The Philippines.";
+
+
+        cin.clear();
+        fflush(stdin);
         break;
 
 
@@ -533,4 +685,15 @@ void StudentEnrollmentSystem::joinOrganizations(){
 
     }
     m.orgz;
+    m.ch = ch;
+}
+void StudentEnrollmentSystem::showEnrolled(){
+    cout << "Name: " << c.name << endl;
+    cout << "Age: " << c.age << endl;
+    cout << "Grade: " << c.grade << endl;
+    cout << "Section: " << c.section << endl;
+    cout << "LRN: " << c.lrn << endl;
+    cout << "Scholarship: " << m.scholarship << endl;
+    cout << "Organization: " << m.ch << endl;
+
 }

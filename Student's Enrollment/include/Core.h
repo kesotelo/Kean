@@ -14,7 +14,7 @@ class Core
         float height, weight;
         int grade, age, pn, lrn;
         string sn ;
-        string sa = "(Di pa rin alam kung saan)";
+        string sa ;
 
     protected:
 

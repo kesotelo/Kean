@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1641261568 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\main.cpp
+1641485888 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\main.cpp
 	<iostream>
 	<string>
+	<conio.h>
 	"StudentEnrollmentSystem.h"
 
 1639028749 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\student.cpp
@@ -14,32 +15,32 @@
 1639558494 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\core.cpp
 	"Core.h"
 
-1639558494 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\core.h
+1641484586 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\core.h
 	<iostream>
 	<string>
 
 1639556289 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\goodtohave.cpp
 	"GoodToHave.h"
 
-1639556472 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\goodtohave.h
+1641467187 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\goodtohave.h
 	<iostream>
 	<string>
 
 1639556540 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\minor.cpp
 	"Minor.h"
 
-1641268694 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\minor.h
+1641525710 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\minor.h
 	<iostream>
 	<string>
 
-1639563377 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\studentenrollmentsystem.h
+1641484589 d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\include\studentenrollmentsystem.h
 	<iostream>
 	<string>
 	"Core.h"
 	"GoodToHave.h"
 	"Minor.h"
 
-1639563384 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\studentenrollmentsystem.cpp
+1641525960 source:d:\users\admin royo\desktop\kean\acad\codes\student's enrollment\src\studentenrollmentsystem.cpp
 	"StudentEnrollmentSystem.h"
 	<iostream>
 	<string>
